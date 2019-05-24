@@ -143,7 +143,7 @@
 }
 
 .skills__caption:last-child{
-  margin:0;
+  padding:0;
 }
 
 .skills__caption-text{
@@ -162,6 +162,10 @@
   text-align:center;
 }
 
+.nav__list{
+  letter-spacing:-0.5em;
+}
+
 .nav__list__item{
   display:inline-block;
 }
@@ -173,6 +177,7 @@
   color:#74cfae;
   font-size:2em;
   transition:background-color 0.3s;
+  letter-spacing:normal;
 }
 
 .nav__btn-icon:hover{
@@ -236,6 +241,12 @@
 }
 
 /* skills */
+
+.skills__list{
+  display:flex;
+  justify-content:center;
+}
+
 .skills__list::after{
   content:"";
   display:block;
@@ -244,7 +255,7 @@
 
 .skills__caption{
   float:left;
-  margin-right:180px;
+  padding-right:180px;
 }
 }
 
