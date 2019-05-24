@@ -1,0 +1,383 @@
+
+
+/* 全デバイス共通のCSS */
+
+/* header */
+
+.header{
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  z-index:10;
+  background-color:#fff;
+}
+
+.header-inner{
+  display:flex;
+  padding:15px 0;
+  justify-content:space-between;
+}
+
+.fa-bolt{
+  color:#4e4e4e;
+  font-size:2em;
+}
+
+.header__btn{
+  display:inline-block;
+  padding:14px 12px;
+  background-color:#74cfae;
+  color:#fff;
+  font-size:12px;
+  transition:background-color 0.3s;
+}
+
+.header__btn:hover{
+  background-color:#333;
+}
+
+/* theme */
+
+.theme{
+  background-color:#f2f2f2;
+}
+
+.theme-inner{
+  padding:250px 0;
+  text-align:center;
+}
+
+.theme__heading{
+  padding-bottom:20px;
+  color:#74cfae;
+  font-size:90px;
+  font-weight:700;
+  font-family:'Raleway',sans-serif;
+}
+
+.theme__foot{
+  color:#c0c0c0;
+  font-size:30px;
+}
+
+/* do */
+
+.do{
+  background-color:#74cfae;
+}
+
+.do-inner{
+  padding-top:50px;
+}
+
+.do__text{
+  width:650px;
+  text-align:center;
+}
+
+.do__heading{
+  padding-bottom:35px;
+  color:#fff;
+}
+
+.do__lead{
+  color:#fff;
+  font-size:20px;
+}
+
+/* work */
+
+.work{
+  background-color:#f2f2f2;
+}
+
+.work-inner{
+  padding:60px 0 70px;
+  text-align:center;
+}
+
+.work__heading{
+  padding-bottom:40px
+}
+
+.work__list{
+  line-height:0;
+}
+
+.work__list__item:nth-child(3n){
+  margin:0 0 80px 0;
+}
+
+.work-desc__wrapper{
+  padding-top:10px;
+}
+
+.work-desc__btn{
+  display:inline-block;
+  padding:14px 20px;
+  background-color:#74cfae;
+  color:#fff;
+  font-size:12px;
+  transition:background-color 0.3s;
+}
+
+.work-desc__btn:hover{
+  background-color:#333;
+}
+
+/* skills */
+
+.skills{
+  background-color:#4e4e4e;
+}
+
+.skills-inner{
+  padding:70px 0 100px;
+  color:#fff;
+  text-align:center;
+}
+
+.skills__heading{
+  padding-bottom:40px;
+}
+
+.skills__caption:last-child{
+  margin:0;
+}
+
+.skills__caption-text{
+  padding-top:10px;
+  font-size:16px;
+}
+
+/* sns */
+
+.nav{
+  background-color:#f2f2f2;
+}
+
+.nav-inner{
+  padding:200px 0;
+  text-align:center;
+}
+
+.nav__list__item{
+  display:inline-block;
+}
+
+.nav__btn-icon{
+  width:185px;
+  padding:40px 0;
+  background-color:#f2f2f2;
+  color:#74cfae;
+  font-size:2em;
+  transition:background-color 0.3s;
+}
+
+.nav__btn-icon:hover{
+  background-color:#fff;
+}
+
+/* footer */
+
+.footer{
+  background-color:#74cfae;
+}
+
+.footer-inner{
+  padding:20px 0 25px;
+}
+
+.footer-inner::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.footer__info{
+  float:right;
+  color:#fff;
+}
+
+/* PCに適用するcss 1200px - */
+
+@media screen and (min-width:1200px){
+
+/* header */
+.spmenu__btn{
+  display:none;
+}
+
+/* do */
+.do-inner{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+/* work */
+.work__list::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.work__list__item{
+  float:left;
+  margin-right:100px;
+}
+
+.work-desc__text{
+  display:inline-block;
+  width:460px;
+  padding-right:90px;
+  vertical-align:top;
+}
+
+/* skills */
+.skills__list::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.skills__caption{
+  float:left;
+  margin-right:180px;
+}
+}
+
+/* TABに適用するcss 768px - 1199px */
+
+@media screen and (min-width:768px) and (max-width:1199px){
+
+  /* header */
+
+  .spmenu__btn{
+    display:none;
+  }
+
+  /* do */
+  .do-inner{
+    padding:50px 0 25px;
+    text-align:center;
+  }
+
+  .do__text{
+    width:650px;
+    margin:0 auto;
+  }
+
+  .do__heading{
+    padding:20px 0 35px;
+  }
+
+  /* work */
+  .work-desc__wrapper{
+    padding-top:10px;
+  }
+
+  .work-desc__text{
+    padding-bottom:40px;
+  }
+
+  /* skills */
+  .skills__caption{
+    margin-bottom:88px;
+  }
+}
+
+/* SPlayout - 767px */
+
+@media screen and (max-width:767px){
+
+/* header */
+.header__btn{
+  display:none;
+}
+
+.spmenu__btn{
+  position:absolute;
+  top:15px;
+  right:10px;
+  width:50px;
+  height:40px;
+  padding:10px;
+  border:1px solid #ddd;
+  border-radius:4px;
+  text-align:center;
+  box-sizing:border-box;
+  cursor:pointer;
+}
+
+.btn-line{
+  display:block;
+  position:absolute;
+  top:10px;
+  width:30px;
+  height:1px;
+  background-color:#ddd;
+}
+
+.btn-line:nth-child(2){
+  top:18px;
+}
+
+.btn-line:nth-child(3){
+  top:26px;
+}
+
+/* theme */
+.theme-inner{
+  padding:160px 130px;
+}
+
+.theme__heading{
+  font-size:80px;
+}
+
+/* do */
+.do-inner{
+  padding:50px 0 25px;
+  text-align:center;
+}
+
+.do__text{
+  max-width:97%;
+  margin:0 auto;
+}
+
+.do__heading{
+  padding:20px 0 35px;
+}
+
+/* work */
+.work-desc__wrapper{
+  padding-top:10px;
+}
+
+.work-desc__text{
+  padding-bottom:40px;
+}
+
+/* skills */
+.skills__caption{
+  margin-bottom:88px;
+}
+
+/* sns */
+.nav-inner{
+  padding:50px 0;
+}
+
+.nav__list__item{
+  display:block;
+}
+
+.nav__btn-icon{
+  width:100%;
+  padding:40px 0;
+}
+}
+
