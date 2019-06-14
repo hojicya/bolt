@@ -106,7 +106,8 @@
 }
 
 .work__list__item:nth-child(3n){
-  margin:0 0 80px 0;
+  margin-right:0px;
+  margin-bottom:80px;
 }
 
 .work-desc__wrapper{
@@ -341,7 +342,7 @@
 
 /* theme */
 .theme-inner{
-  padding:160px 130px;
+  padding:160px 0 130px 0;
 }
 
 .theme__heading{
@@ -388,7 +389,8 @@
 
 .nav__btn-icon{
   width:100%;
-  padding:40px 0;
+  padding:40px 15px;
+  box-sizing:border-box;
 }
 }
 
